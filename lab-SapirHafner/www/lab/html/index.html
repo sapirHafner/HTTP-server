@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks 2024: Final Project</title>
+    <style>
+        @keyframes moveTitle {
+			0% { transform: translateX(0); }
+			50% { transform: translateX(10px); }
+			100% { transform: translateX(0); }
+		}
+		form {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 40%; /* Take up the full width of the container */
+            box-sizing: border-box; /* Include padding and border in the width */
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        .checkbox-label {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            margin-top: 10px;
+        }
+
+        .checkbox-label input {
+            margin-right: 5px;
+        }
+
+        .checkbox-label label {
+            white-space: nowrap; /* Prevent text from wrapping to the next line */
+        }
+			
+		body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 1em;
+        }
+		
+		header h1 {
+            color: rgb(162, 0, 255);
+            animation: moveTitle 2s infinite; 
+        }
+
+        section {
+            margin: 5px;
+            padding: 20px;
+            background-color: #fff;
+            border: #ddd;
+            border-radius: 5px;
+			text-align: center;	
+			border-bottom-style: 1px solid rgb(0, 204, 255);
+        }
+		
+		section h2 {
+			color: rgb(0, 204, 255);
+		}
+		
+		hr {
+			border: 1px solid black;
+		}
+					
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Computer Networks 2024: Final Project</h1>
+    </header>
+
+    <section>
+		<div>
+			<h2>by Sapir Hafner & Adi Shimony</h2>
+			<p>Hey there! Here are some links as requested:</p>
+			<a href="https://www.youtube.com/" target="_blank">Link to visit YouTube</a><br>
+			<a href="https://moodle.runi.ac.il/2024/course/view.php?id=2401572 target="_blank">Link to the course website in moodle</a>
+		</div>
+		
+		<div>
+			<br>
+			<p>Also, The images as requested:</p> 
+			<img src=".\images\image1.jpg" alt="First img" width="200" height="200">
+			<img src=".\images\image2.jpg" alt="Second img" width="250" height="230">
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+		<div>
+			<h3>Form</h3>
+			<form method="post" action="params_info.html">
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <div class="checkbox-label">
+                <label for="message">what is your mood right now?</label>
+                <br>
+                <label>
+                    <input type="checkbox" id="Happy Emoji" name="Haapy">
+                    😁<br>
+                    <input type="checkbox" id="Sad Emoji" name="Sad">
+                    😔<br>
+                    <input type="checkbox" id="Angry Emoji" name="Angry">
+                    😡<br>
+                </label>
+            </div>
+
+			<input type="submit" value="Submit">
+		</form>
+		</div>		
+    </section>
+</body>
+</html>
